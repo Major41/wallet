@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = 'ca215def-b2d8-4f89-9333-71044e92e71e';
-const WALLET_ADDRESS = 'BKGiGcJPFgPahLMTGM2o9pd4jQRHgSm7W8roSjqsAk3P';
+const WALLET_ADDRESS = '82EJRQK4vvBjtpjNkfctFVaRR145L5t3b5VVRPogxzUx';
 const BASE_URL = 'https://data.solanatracker.io';
 
 // Function to introduce a delay
@@ -22,7 +22,7 @@ async function fetchPnL(period) {
       },
     });
     // console.log(`PnL Data for ${period}:`, response.data);
-    console.log(response.data);
+    console.log(response.data.historic);
   } catch (error) {
     console.error(`Error fetching PnL data for ${period}:`, error);
   }
@@ -42,3 +42,6 @@ const periods = ['1d', '2d', '7d', '30d'];
 
 // Start fetching PnL for the specified periods
 fetchPnLWithDelay(periods);
+
+
+// So11111111111111111111111111111111111111112
